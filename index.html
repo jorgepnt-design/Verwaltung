@@ -69,6 +69,11 @@
         <label class="wide">Login-URL<input id="url" type="url" placeholder="https://"></label>
         <label>Benutzername<input id="username" autocomplete="off"></label>
         <label>Passwort<div class="password-field"><input id="password" type="password" autocomplete="new-password"><button type="button" id="togglePassword">Anzeigen</button></div></label>
+        <div class="wide m3u-row">
+          <button type="button" id="m3uBuildBtn" class="ghost small-btn">Aus URL/Login → M3U erstellen</button>
+          <button type="button" id="m3uParseBtn" class="ghost small-btn">Aus M3U-Link einfügen</button>
+        </div>
+        <label class="wide">M3U-Link<div class="password-field"><input id="m3uOutput" type="text" readonly placeholder="Wird hier angezeigt, sobald erstellt …"><button type="button" id="m3uCopyBtn">Kopieren</button></div></label>
         <label>Erinnerung<select id="reminder"><option value="90">90 Tage vorher</option><option value="30" selected>30 Tage vorher</option><option value="14">14 Tage vorher</option><option value="7">7 Tage vorher</option><option value="1">1 Tag vorher</option></select></label>
         <label class="wide">Notizen<textarea id="notes" rows="3"></textarea></label>
       </div>
